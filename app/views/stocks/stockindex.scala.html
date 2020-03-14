@@ -1,0 +1,16 @@
+@(stocks: Array[StockDf])
+
+@main("Cox Assignment") {
+
+
+  <div>
+    <ul>
+    <li><a href="@routes.HomeController.simpleForm()">Click to Enter Stock Symbols seperated by comma</a></li>
+  
+	
+	@for(stock <- stocks){
+		<B>@stock.symbol =></B>	@stock.regularMarketPrice<br>
+	}
+	  </ul>	
+  </div>
+}

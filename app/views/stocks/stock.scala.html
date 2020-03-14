@@ -1,0 +1,16 @@
+@import helper._
+
+
+@(userForm: Form[BasicForm])(implicit messages: Messages)
+
+@main("Cox Assignment") {
+    <h1>Please enter Stock Symbols seperated by comma</h1>
+
+
+    @form(action = routes.HomeController.simpleFormPost()) {
+			
+        @inputText(userForm("Stock Symbols"))
+
+        <input type="Go Back" value="Go Back">
+    }
+}
