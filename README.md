@@ -7,4 +7,6 @@ User can add/remove stocks to watch quotes in real time using  Yahoo! finance.
 
 $ sbt run
 
+Please open  browser and go to url  http://localhost:9000 to access the applion
+
 
